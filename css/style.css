@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "gilroy";
+  src: url(../fonts/Gilroy-Regular.woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "gilroy";
+  src: url(../fonts/Gilroy-Medium.woff2);
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "gilroy";
+  src: url(../fonts/Gilroy-Semibold.woff2);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "gilroy";
+  src: url(../fonts/Gilroy-Bold.woff2);
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\e900";
+}
+
+.icon-arrow-link:before {
+  content: "\e901";
+}
+
+.icon-cart:before {
+  content: "\e902";
+}
+
+.icon-favorite:before {
+  content: "\e903";
+}
+
+.icon-location:before {
+  content: "\e904";
+}
+
+.icon-phone:before {
+  content: "\e905";
+}
+
+.icon-search:before {
+  content: "\e906";
+}
+
+.icon-send:before {
+  content: "\e907";
+}
+
+.icon-share:before {
+  content: "\e908";
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+button {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  font-family: inherit;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: gilroy, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #252B42;
+  line-height: 1.2;
+}
+
+/*---------------------------*/
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/*---------------------------*/
+[class*=__container] {
+  max-width: 1260px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/*---------------------------*/
+.main {
+  flex: 1 1 auto;
+}
+
+.ibg {
+  position: relative;
+}
+
+.ibg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+.gilroy1 {
+  font-family: gilroy;
+  font-weight: 400;
+}
+
+.gilroy2 {
+  font-family: gilroy;
+  font-weight: 500;
+}
+
+.gilroy3 {
+  font-family: gilroy;
+  font-weight: 600;
+}
+
+.gilroy4 {
+  font-family: gilroy;
+  font-weight: 700;
+}

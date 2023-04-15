@@ -1,0 +1,103 @@
+//? Обнуление
+*,
+*::before,
+*::after {
+    padding   : 0;
+    margin    : 0;
+    // bottom    : 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color           : inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    max-width      : 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size  : inherit;
+}
+
+button {
+    color            : inherit;
+    font-size        : inherit;
+    line-height      : inherit;
+    background-color : transparent;
+    border           : none;
+    cursor           : pointer;
+    overflow         : hidden;
+    font-family      : inherit;
+    padding          : 0;
+  }
+
+html,
+body {
+    height     : 100%;
+}
+
+html {
+    // scroll-behavior : smooth;
+  }
+  
+
+body {
+    font-family: gilroy, sans-serif;
+    font-size  : 16px;
+    font-weight: 400;
+    color      : #252B42;
+    line-height: 1.2;
+}
+
+/*---------------------------*/
+.wrapper {
+    overflow      : hidden;
+    display       : flex;
+    flex-direction: column;
+    min-height    : 100%;
+}
+
+/*---------------------------*/
+[class*="__container"] {
+    max-width: 1260px;
+    padding  : 0 10px;
+    margin   : 0 auto;
+}
+/*---------------------------*/
+.main {
+    flex : 1 1 auto;
+  }
+
+  //! ----------------------------------
+.ibg {
+    position : relative;
+  }
+  
+  .ibg img {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    height     : 100%;
+    width      : 100%;
+    object-fit : cover;
+  }
+  
+  //! ----------------------------------
+  .ovh {
+    overflow : hidden;
+  }
