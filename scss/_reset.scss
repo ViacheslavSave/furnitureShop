@@ -45,6 +45,10 @@ button {
     font-family      : inherit;
     padding          : 0;
   }
+  input{
+    outline: none;
+    border: none;
+  }
 
 html,
 body {
@@ -60,7 +64,7 @@ body {
     font-family: gilroy, sans-serif;
     font-size  : 16px;
     font-weight: 400;
-    color      : #252B42;
+    color       : #3A3A3A;
     line-height: 1.2;
 }
 
