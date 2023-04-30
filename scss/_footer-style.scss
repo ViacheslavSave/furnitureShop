@@ -13,6 +13,7 @@
 }
 
 // $max-width  :1260;
+$max-width  : 1260;
 
 .footer {
 
@@ -27,8 +28,8 @@
     padding-bottom        : 80px;
     column-gap            : 40px;
     row-gap               : 20px;
-
     //!------------------  media -- max-width -- 1260px  ------------------
+
     @media(max-width: #{$max-width + px}) {
 
       // color          : red;
@@ -192,22 +193,24 @@
     flex-direction : column;
 
     &__column {
-      width: 100%;
-      display             : flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content     : space-between;
-      transition: all .3s ease 0s;
+      width           : 100%;
+      display         : flex;
+      flex-wrap       : wrap;
+      gap             : 15px;
+      justify-content : space-between;
+      transition      : all .3s ease 0s;
+
       .menu-footer__arrow {
-        transition: all .3s ease 0s;
-        font-size: 14px;
-        
+        transition : all .3s ease 0s;
+        font-size  : 14px;
+
       }
-  
+
       &--active {
+
         // gap:30px;
         .menu-footer__list {
-          max-height    : 500px;
+          max-height    : 200px;
           margin-bottom : 20px;
 
         }
@@ -217,9 +220,10 @@
           // margin-right: auto;
           // display: block;
         }
+
         .menu-footer__arrow {
           color           : #f18b4b;
-          transform: rotate(-180deg);
+          transform       : rotate(-180deg);
           // margin-right: auto;
           // display: block;
         }
@@ -263,23 +267,26 @@
 
   &__title {
 
-    cursor        : default;
-    transition    : all .3s ease 0s;
+    cursor     : default;
+    transition : all .3s ease 0s;
+
     //!------------------  media -- min-width -- 630 + px  ------------------
-    @media(min-width:#{630 + px}){
-      
+    @media(min-width:#{630 + px}) {
+
       margin-bottom : 16px;
     }
-    
+
 
   }
-&__arrow{
+
+  &__arrow {
+
     //!------------------  media -- min-width -- 630 + px  ------------------
-    @media(min-width:#{630 + px}){
-      
-    display: none;
+    @media(min-width:#{630 + px}) {
+
+      display : none;
     }
-}
+  }
 
 
 
@@ -381,6 +388,8 @@
 }
 
 .icon-send {}
+
+
 
 //!      1230
 //!      630

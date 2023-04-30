@@ -1,11 +1,13 @@
 @import "_fonts";
 @import "_reset";
+@import "_adaptivProperty";
+
+@import "_main-slider";
+
 @import "_footer-style";
-// @import "_button-burger";
 $color  :red;
 
-body {
-}
+body {}
 
 //!----- header -----
 //?----------------------------- header ------------------------------------
@@ -15,17 +17,38 @@ body {
   left     : 0;
   width    : 100%;
   z-index  : 50;
-  
+
+
   &__inner {
-    background-color : #FCF8F3;
-    position : fixed;
-    top      : 0;
-    left     : 0;
-    width    : 100%;
-    z-index  : 50;
+    position   : fixed;
+    top        : 0;
+    left       : 0;
+    width      : 100%;
+    z-index    : 50;
+    background : rgba(252, 248, 243, 0.493);
+
   }
 
-  &__container {}
+  &__container {
+    position : relative;
+
+    //!------------------  media -- min-width -- 992 + px  ------------------
+    @media(min-width:#{992 + px}) {
+      &::before {
+        content    : '';
+        position   : absolute;
+        background : rgba(249, 241, 231, 0.342);
+
+        width       : 100vw;
+        height      : 100%;
+        top         : 0;
+        right       : 376px;
+        // z-index : 1;
+      }
+
+    }
+  }
+
 
   &__body {
     display     : flex;
@@ -33,6 +56,10 @@ body {
     padding     : 5px 0;
     min-height  : 125px;
     position    : relative;
+
+
+
+
   }
 
   &__main {
@@ -79,10 +106,10 @@ body {
     &.hover {
       .menu__sub-inner {
 
-        max-height: 200vh;
-        overflow-y: auto;
+        max-height     : 200vh;
+        overflow-y     : auto;
         // max-height : 100000px;
-       
+
       }
 
       .menu__sub-list {
@@ -90,11 +117,11 @@ body {
         // opacity            : 1;
         // visibility         : visible;
 
-        padding    : 15px 15px;
+        padding        : 15px 15px;
         // margin-top : 0;
         // margin     : 0 -3px;
         // max-height : 10000px;
-        overflow-y: auto;
+        overflow-y     : auto;
       }
 
       .menu__sub-item {
@@ -178,9 +205,9 @@ body {
   }
 
   &__sub-list {
-    position                 : relative;
-    background-color         : #E89F71;
-    padding                  : 15px;
+    position                     : relative;
+    background-color             : #E89F71;
+    padding                      : 15px;
     // flex             : 1 1 100%;
     // font-size: 10px;
     // height: 1px;
@@ -188,7 +215,7 @@ body {
     // transition               : max-height .3s ease 0s, padding .4s ease 0s;
     // transition           : all .3s ease 0s;
     // margin-top: -100vh;
-    margin                   : 0 -3px;
+    margin                       : 0 -3px;
 
 
     // transform          : translateY(-20px);
@@ -348,6 +375,8 @@ body {
 
 //?----------------------------- header -- end -----------------------------
 
-
+.main {
+  &__slider {}
+}
 
 @import "_media";

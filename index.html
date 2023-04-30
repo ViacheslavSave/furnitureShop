@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="shortcut icon" href="globe.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 		<title>FurnitureShop</title>
 	</head>
@@ -78,7 +79,7 @@
 								</div>
 
 								<a href="#footer" class="actions-header__item actions-header__item--user ibg">
-									<img src="images/avatar.jpg" alt="avatar" />
+									<img src="images/avatar.png" alt="avatar" />
 								</a>
 							</div>
 
@@ -91,7 +92,94 @@
 					</div>
 				</div>
 			</header>
-			<main class="main"></main>
+			<main class="main">
+				<section class="main__slider main-slider">
+					<div class="main-slider__container">
+						<div class="main-slider__body">
+
+							<div class="main-slider__content content-main">
+								<h1 class="content-main__title">High-Quality Furniture Just For You</h1>
+								<p class="content-main__text">
+									Our furniture is made from selected and best quality materials that are suitable for your dream home
+								</p>
+								<button class="main-slider__btn  content-main__btn content-main__btn--active">Shop Now</button>
+								<!-- <button class="main-slider__btn ">Shop Now</button> -->
+							</div>
+
+							<div class="main-slider__slider slider-main">
+								<div class="slider-main__controls controls-slider-main">
+									<div class="controls-slider-main__dots"></div>
+									<div class="controls-slider-main__arrows slider-arrows">
+										<button type="button" class="slider-arrows__arrow slider-arrows__arrow--prev icon-arrow-down"></button>
+										<button type="button" class="slider-arrows__arrow slider-arrows__arrow--next icon-arrow-down"></button>
+									</div>
+								</div>
+								<div class="slider-main__body swiper">
+
+									<div class="swiper-wrapper">
+
+										<div class="swiper-slide slider-main__slide">
+											<div class="slider-main__image ibg"><img src="images/main-slider/01.jpg" alt="image" /></div>
+											<a href="#" class="slider-main__content">
+												<h2 class="slider-main__title">Bohauss</h2>
+												<p class="slider-main__text">Luxury big sofa 2-seat</p>
+												<div class="slider-main__prise">Rp17.000.000 <span class="icon-arrow-link"></span></div>
+											</a>
+										</div>
+										<div class="swiper-slide slider-main__slide">
+											<div class="slider-main__image ibg"><img src="images/main-slider/02.jpg" alt="image" /></div>
+											<a href="#" class="slider-main__content">
+												<h2 class="slider-main__title">Bohauss</h2>
+												<p class="slider-main__text">Luxury big sofa 2-seat</p>
+												<div class="slider-main__prise">Rp17.000.000 <span class="icon-arrow-link"></span></div>
+											</a>
+										</div>
+										
+										<div class="swiper-slide slider-main__slide">
+											<div class="slider-main__image ibg"><img src="images/main-slider/03.jpg" alt="image" /></div>
+											<a href="#" class="slider-main__content">
+												<h2 class="slider-main__title">Bohauss</h2>
+												<p class="slider-main__text">Luxury big sofa 2-seat</p>
+												<div class="slider-main__prise">Rp 17.000.000 <span class="icon-arrow-link"></span></div>
+											</a>
+										</div>
+
+										<div class="swiper-slide slider-main__slide">
+											<div class="slider-main__image ibg"><img src="images/main-slider/01.jpg" alt="image" /></div>
+											<a href="#" class="slider-main__content">
+												<h2 class="slider-main__title">Bohauss</h2>
+												<p class="slider-main__text">Luxury big sofa 2-seat</p>
+												<div class="slider-main__prise">Rp17.000.000 <span class="icon-arrow-link"></span></div>
+											</a>
+										</div>
+										<div class="swiper-slide slider-main__slide">
+											<div class="slider-main__image ibg"><img src="images/main-slider/02.jpg" alt="image" /></div>
+											<a href="#" class="slider-main__content">
+												<h2 class="slider-main__title">Bohauss</h2>
+												<p class="slider-main__text">Luxury big sofa 2-seat</p>
+												<div class="slider-main__prise">Rp17.000.000 <span class="icon-arrow-link"></span></div>
+											</a>
+										</div>
+										
+										<div class="swiper-slide slider-main__slide">
+											<div class="slider-main__image ibg"><img src="images/main-slider/03.jpg" alt="image" /></div>
+											<a href="#" class="slider-main__content">
+												<h2 class="slider-main__title">Bohauss</h2>
+												<p class="slider-main__text">Luxury big sofa 2-seat</p>
+												<div class="slider-main__prise">Rp 17.000.000 <span class="icon-arrow-link"></span></div>
+											</a>
+										</div>
+
+									</div>
+								</div>
+					
+							</div>
+							<button class="main-slider__btn  main-slider__btn--active">Shop Now</button>
+						</div>
+					</div>
+				</section>
+			</main>
+
 			<footer class="footer">
 				<div class="footer__container">
 					<div class="footer__body">
@@ -157,6 +245,7 @@
 				</div>
 			</footer>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
