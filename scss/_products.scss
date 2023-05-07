@@ -47,6 +47,22 @@
     grid-template-columns  : repeat(auto-fit, minmax(285px, 1fr));
     gap                    : 32px;
     @include ads("margin-bottom ", 20, 32, 1, $max-width, 320);
+    margin  : 0 -20px;
+
+    .products__item {
+      margin  : 0 10px;
+    }
+
+    //!------------------  media -- min-width -- 620 + px  ------------------
+    @media(min-width:#{580 + px}) {
+      margin  : 0;
+
+      .products__item {
+
+        margin  : 0;
+      }
+    }
+
   }
 
   &__item {}

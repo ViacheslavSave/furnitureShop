@@ -135,7 +135,7 @@ window.onload = function () {
 				prevEl: ".main-slider .slider-arrows__arrow--prev",
 			},
 			pagination: {
-				el: ".main-slider .controls-slider-main__dots",
+				el: ".main-slider .controls-slider-main__dotts",
 				clickable: true,
 			},
 		});
@@ -143,6 +143,36 @@ window.onload = function () {
 		// swiper2.controller.control = swiper;
 		// swiper.controller.control = swiper2;
 	}
+
+	// !-----------------------      Swiper2
+	if (document.querySelector(".slider-rooms__body")) {
+		new Swiper(".slider-rooms__body", {
+			// !
+			observer: true,
+			observerParents: true,
+			slidesPerView: 'auto',
+			spaceBetween: 24,
+			speed: 800,
+			loop: true,
+			watchOverflow: true,
+			loopAdditionalSlides: 5,
+			preloadImages: false,
+			parallax: true,
+
+			pagination: {
+				el: ".slider-rooms__dotts",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".slider-rooms .slider-arrows__arrow--next",
+				prevEl: ".slider-rooms .slider-arrows__arrow--prev",
+			},
+		});
+
+		// swiper2.controller.control = swiper;
+		// swiper.controller.control = swiper2;
+	}
+	// !-----------------------
 
 	// window.addEventListener("resize", (e) => {
 	// 	const btn = document.querySelector(".content-main__btn");
@@ -338,7 +368,7 @@ window.onload = function () {
 				const cartProductQuantity = cartProduct.querySelector(".cart-list__quantity span");
 				cartProductQuantity.innerHTML = ++cartProductQuantity.innerHTML;
 			}
-				productButton.classList.remove("hold");
+			productButton.classList.remove("hold");
 		}
 		// удаляем
 		else {
